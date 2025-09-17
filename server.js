@@ -1,8 +1,8 @@
-const express require('express');
-const express require('morgan');
+const express = require('express');
+const express = require('morgan');
 const app = express();
-app.use(morgan('combined'));
 
+app.use(morgan('combined'));
 app.get('/convert', (req, res) => {
   const lbs = Number(req.query.lbs);
   if (req.query.lbs === undefined || Number.isNaN(lbs)) {
