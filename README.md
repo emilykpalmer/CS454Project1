@@ -29,22 +29,22 @@ To test (in bash):
      curl 'http://<EC2_Public_IP:8080/convert?lbs=<pounds_value>'
 
 ## Test cases and results
-  1. http://<EC2_Public_IP:8080/convert?lbs=0
+  1. http://<EC2_Public_IP:8080/convert?lbs=0\
      Result: {"lbs":0,"kg":0,"formula":"kg = lbs * 0.4359237"}
 
-  2. http://<EC2_Public_IP:8080/convert?lbs=150
+  2. http://<EC2_Public_IP:8080/convert?lbs=150\
      Result: {"lbs":150,"kg":68.039,"formula":"kg = lbs * 0.4359237"}
 
-  3. http://<EC2_Public_IP:8080/convert?lbs=0.1
+  3. http://<EC2_Public_IP:8080/convert?lbs=0.1\
      Result: {"lbs":0.1,"kg":0.045,"formula":"kg = lbs * 0.4359237"}
 
-  4. http://<EC2_Public_IP:8080/convert
+  4. http://<EC2_Public_IP:8080/convert\
      Result: {"error":"Query param lbs is required and must be a number"}
 
-  5. http://<EC2_Public_IP:8080/convert?lbs=-5
+  5. http://<EC2_Public_IP:8080/convert?lbs=-5\
      Result: {"error":"lbs must be a non-negative, finite number"}
 
-  6. http://<EC2_Public_IP:8080/convert?lbs=NaN
+  6. http://<EC2_Public_IP:8080/convert?lbs=NaN\
      Result: {"error":"Query param lbs is required and must be a number"}
 
 
