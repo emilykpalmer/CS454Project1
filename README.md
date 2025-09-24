@@ -2,11 +2,11 @@
 This is a service that uses a REST API through Node.js/Express to convert pounds to kilograms.
 
 ## Run the service locally  
-In bash:
-  npm install
+In bash: 
+  npm install  
   node server.js
 
-To test (in bash):
+To test (in bash):  
   curl 'http://localhost:8080/convert?lbs=<pounds_value>'
 
 ## Deploy the service using an EC2 instance 
