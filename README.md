@@ -1,13 +1,13 @@
 # CS 454 Project 1
 This is a service that uses a REST API through Node.js/Express to convert pounds to kilograms.
 
-## Run the service locally  
-In bash:  
+## Run and test the service locally  
+In bash:
   1. npm install (only have to run once)
   2. node server.js
 
 To test (in bash):  
-    curl 'http://localhost:8080/convert?lbs=<pounds_value>'
+&nbsp; curl 'http://localhost:8080/convert?lbs=<pounds_value>'
 
 ## Deploy the service using an EC2 instance 
   1. Launch an AWS t3.mirco Amazon Linux EC2 instance
