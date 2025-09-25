@@ -12,7 +12,7 @@ This is a service that uses a REST API through Node.js/Express to convert pounds
 ## Deploy the service using an EC2 instance 
   1. Launch an AWS t3.mirco Amazon Linux EC2 instance \
        a. Allow SSH (20) from your IP \
-       b. Modify security group to allow inbound TCP/8080 \
+       b. Modify security group to allow inbound TCP/8080 
   2. Connect to the EC2 instance 
   3. Install Node.js and npm
   4. Clone this repo into the EC2 instance 
